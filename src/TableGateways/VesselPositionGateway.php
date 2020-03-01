@@ -66,13 +66,14 @@ class VesselPositionGateway {
                 $values[] = $parameter;
                 $statement .= " AND `lon` > ?";
             }
-
             
             if ($key == 'maxLon') {
                 $values[] = $parameter;
                 $statement .= " AND `lon` <= ?";
             }
         }
+
+        $statement .= " ORDER BY `timestamp` DESC";
 
         try {
             $statement = $this->db->prepare($statement);
