@@ -36,7 +36,7 @@ The results output returns in json or xml format.
 
 **URL Format**
 
-`http://127.0.0.1:8000/{content_type}?mmsi={integet}&minLat={decimal}&maxLat={decimal}`
+`http://127.0.0.1:8000/{content_type}?mmsi={integer}&minLat={decimal}&maxLat={decimal}`
 
 **Examples/Tests**
 
