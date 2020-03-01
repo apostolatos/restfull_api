@@ -34,7 +34,7 @@ You can test the API with a tool like Postman. First, go to the project director
 
 The results output returns in json or xml format.
 
-**URL FORMAT**
+**URL Format**
 
 `http://127.0.0.1:8000/{content_type}?mmsi={integet}&minLat={decimal}&maxLat={decimal}`
 
