@@ -1,6 +1,6 @@
 # Installation
 
-First of all, we need create a database which is named `restfull_api`
+First of all, we need to create a database which is named `restfull_api`
 
 Once the database is created, run the following URL command to install tables and seeder.
 
@@ -32,13 +32,21 @@ You can test the API with a tool like Postman. First, go to the project director
 
 `php -S 127.0.0.1:8000 -t public`
 
-The results output witch return in json or xml format.
+The results output returns in json or xml format.
 
-Examples/Tests
+**URL FORMAT**
 
-Includes all filters such as mmsi, minLat, maxLat, maxLon and maxLon as XML format
+`http://127.0.0.1:8000/{content_type}?mmsi={integet}&minLat={decimal}&maxLat={decimal}`
+
+**Examples/Tests**
+
+Includes all filters such as mmsi, minLat, maxLat as XML format
 
 `http://127.0.0.1:8000/xml?mmsi=247039300&minLat=41.9483&maxLat=42.3444`
+
+Includes all filters such as mmsi, minLon, maxLon as XML format
+
+`http://127.0.0.1:8000/xml?mmsi=247039300&minLon=16.28206&maxLon=16.2957`
 
 Includes multiple mmsi as json format
 
